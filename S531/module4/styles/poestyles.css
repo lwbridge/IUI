@@ -1,1 +1,11 @@
+body {max-width: 60em;
+margin: 0 auto 0 auto;}
 
+table, th, td {border-collapse: collapse;
+border: 1px solid #000;
+padding: 1em;}
+
+body {background-image: url(../images/floor.jpg);/*This took to much work*/}
+h1 {color: #830e0d;/*I don't know if I should have changed the color or font*/ background-color: #4C0013; font-size: 300%; text-align: center;} 
+h2 {color: #830e0d; background-color: #4C0013; text-align: center;} 
+p {color: #830e0d; font-family: Courier New; background-color: #271810; text-align: center;/*I'm glad I aligned everything*/}
