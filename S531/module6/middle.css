@@ -1,6 +1,7 @@
         img		{ 			
-width: 50%;
-position: relative;
+		width: 65%;
+		height: 20%;
+		position: relative;
 }
             body {
          background-image: url(images/bunny.jpg);
