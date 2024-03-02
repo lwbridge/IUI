@@ -1,0 +1,104 @@
+        img		{ 
+			max-width: 250px;
+			position: relative;
+		}
+		            body {
+         background-image: url(images/lily.jpg);
+}
+		
+		header {
+            grid-area: header;
+            background-color: #D22B2B;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: #D2042D;
+        }
+
+        main {
+            grid-area: main;
+            background-color: 	#9A2A2A;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: 	#4A0404;
+            color: #FF0000;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #DC143C;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header header aside'
+                'nav nav main main main aside'
+                'nav nav main main main aside'
+                'nav nav main main main aside'
+				'footer footer footer footer footer footer';
+            grid-gap: .5em;
+            padding: .5em;
+			
+			max-width: 900px;
+			margin: auto;
+        }
+
+
+        ul li {
+            list-style-type: none;
+        }
+        
+/*FIRST BREAK POINT === mobile */
+        @media only screen and (max-width : 600px) {
+
+          		            body {
+         background-image: url(images/lily.jpg);
+}
+            .grid-container {
+                display: grid;
+                grid-template-areas:
+                    'nav nav nav nav nav nav'
+                    'header header header header header header'
+                    'main main main main main main'
+                    'aside aside aside aside aside aside'
+                    'footer footer footer footer footer footer';
+                grid-gap: .5em;
+                padding: .5em;
+            }
+
+            ul li {
+                display: inline-block;
+            }
+			
+			img {
+				display: none;
+			}
+
+        }
+
+        /*SECOND BREAK POINT === tablet */
+        @media only screen and (max-width : 900px) {
+          		            body {
+         background-image: url(images/lily.jpg);
+}
+            .grid-container {
+                display: grid;
+                grid-template-areas:
+                                        'header header header header header header'
+					'nav nav nav nav nav nav'
+                    'main main main main aside aside'
+                    'footer footer footer footer footer footer';
+                grid-gap: .5em;
+                padding: .5em;
+            }
+
+            ul li {
+                display: inline-block;
+            }
+
+        }
+

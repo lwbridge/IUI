@@ -1,0 +1,93 @@
+               body {
+         background-image: url(images/pink.jpg);
+}
+        header {
+            grid-area: header;
+            background-color: #FF69B4;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: #FF10F0;
+        }
+
+        main {
+            grid-area: main;
+            background-color: #FF00FF;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: #953553;
+        }
+			
+
+        footer {
+            grid-area: footer;
+            background-color: #AA336A;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header header header'
+                'nav nav main main main aside'
+                'nav nav main main main aside'
+                'nav nav footer footer footer footer';
+            grid-gap: .5em;
+			
+			max-width: 900px;
+			margin: auto;
+        }
+
+
+        ul li {
+            list-style-type: none;
+        }
+
+
+      /*FIRST BREAK POINT === mobile */
+        @media only screen and (max-width : 600px){
+
+            body {
+         background-image: url(images/pink.jpg);
+}
+            .grid-container {
+                display: grid;
+                grid-template-areas:
+                    'nav nav nav nav nav nav'
+                    'header header header header header header'
+                    'main main main main main main'
+                    'aside aside aside aside aside aside'
+                    'footer footer footer footer footer footer';
+                grid-gap: .5em;
+  
+            }
+
+            ul li {
+                display: inline-block;
+            }
+
+        }
+        
+       /*SECOND BREAK POINT === tablet */
+        @media only screen and (max-width : 900px){
+            body {
+                background-image: url(images/pink.jpg);
+          }
+
+            .grid-container {
+                display: grid;
+                grid-template-areas:
+                    'nav nav nav nav nav nav'
+                    'header header header header header header'
+                    'main main main main aside aside'
+                    'footer footer footer footer footer footer';
+                grid-gap: .5em;
+            }
+
+            ul li {
+                display: inline-block;
+            }
+
+        }

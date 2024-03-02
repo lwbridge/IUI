@@ -1,0 +1,103 @@
+        img		{ 			
+width: 400px;
+height: 300px;
+position: relative;
+float: none;
+}
+            body {
+         background-image: url(images/bunny.jpg);
+}
+	header {
+            grid-area: header;
+            background-image: url(images/cn.jpg);
+            background-size: 600px 100px;       
+}
+
+        nav {
+            grid-area: nav;
+            background-color: #40E0D0;
+        }
+
+        main {
+            grid-area: main;
+            background-color: #9FE2BF;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: #008080;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #40B5AD;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header header aside'
+                'nav nav main main main aside'
+                'nav nav main main main aside'
+                'nav nav main main main aside'
+				'footer footer footer footer footer footer';
+            grid-gap: .5em;
+            padding: .5em;
+			
+			max-width: 900px;
+			margin: auto;
+        }
+
+
+        ul li {
+            list-style-type: none;
+        }
+
+    /*FIRST BREAK POINT === mobile */
+        @media only screen and (max-width : 600px){
+
+            body {
+         background-image: url(images/bunny.jpg);
+}
+
+            .grid-container {
+                display: grid;
+                grid-template-areas:
+                    'nav nav nav nav nav nav'
+                    'header header header header header header'
+                    'main main main main main main'
+                    'aside aside aside aside aside aside'
+                    'footer footer footer footer footer footer';
+                grid-gap: .5em;
+                padding: .5em;
+            }
+
+            ul li {
+                display: inline-block;
+            }
+			
+			img {
+				display: none;
+			}
+
+       /*SECOND BREAK POINT === tablet */
+        @media only screen and (max-width : 900px) {
+                   body {
+         background-image: url(images/bunny.jpg);
+}
+            .grid-container {
+                display: grid;
+                grid-template-areas:
+                                        'header header header header header header'
+					'nav nav nav nav nav nav'
+                    'main main main main aside aside'
+                    'footer footer footer footer footer footer';
+                grid-gap: .5em;
+                padding: .5em;
+            }
+
+            ul li {
+                display: inline-block;
+            }
+
+        }
