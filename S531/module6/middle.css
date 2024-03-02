@@ -52,8 +52,30 @@ float: none;
         ul li {
             list-style-type: none;
         }
+     
+/*SECOND BREAK POINT === tablet */
+        @media only screen and (max-width : 900px) {
+                   body {
+         background-image: url(images/bunny.jpg);
+}
+            .grid-container {
+                display: grid;
+                grid-template-areas:
+                                        'header header header header header header'
+					'nav nav nav nav nav nav'
+                    'main main main main aside aside'
+                    'footer footer footer footer footer footer';
+                grid-gap: .5em;
+                padding: .5em;
+            }
 
-    /*FIRST BREAK POINT === mobile */
+            ul li {
+                display: inline-block;
+            }
+
+        }
+  
+/*FIRST BREAK POINT === mobile */
         @media only screen and (max-width : 600px){
 
             body {
@@ -80,24 +102,4 @@ float: none;
 				display: none;
 			}
 
-       /*SECOND BREAK POINT === tablet */
-        @media only screen and (max-width : 900px) {
-                   body {
-         background-image: url(images/bunny.jpg);
-}
-            .grid-container {
-                display: grid;
-                grid-template-areas:
-                                        'header header header header header header'
-					'nav nav nav nav nav nav'
-                    'main main main main aside aside'
-                    'footer footer footer footer footer footer';
-                grid-gap: .5em;
-                padding: .5em;
-            }
-
-            ul li {
-                display: inline-block;
-            }
-
-        }
+ 
