@@ -97,6 +97,6 @@
             }
 			
 			img {
-				display: 600px;
+				display: inherit;
 			}
         }
